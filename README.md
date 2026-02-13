@@ -26,7 +26,7 @@ Steps:
 - Download Python from [Python for Windows.](https://www.python.org/downloads/).
 - Run the installer, then check “Add Python to PATH” before selecting Install Now.
 - Wait until the installation is complete, then click Close.
-- Verify the installation by opening PowerShell and running command ``` python --version ```
+- Verify the installation by opening PowerShell and running command `python --version`.
 
 ### 2. macOS
 Suitable for: Users who prefer a clean development setup using macOS’s Unix-based environment.
@@ -39,8 +39,8 @@ Minimum Requirements:
 
 Steps:
 - Download the installer for macOS at [Python macOS.](https://www.python.org/downloads/macos/)
-- Open the ```.pkg``` file and follow the installation instructions until complete.
-- Open Terminal and verify the Python version with command ``` python3 --version ```.
+- Open the `.pkg` file and follow the installation instructions until complete.
+- Open Terminal and verify the Python version with command `python3 --version`.
 
 ---
 
@@ -51,9 +51,9 @@ After installing Python and VS Code, you can start writing your first Python pro
 ### 1. Create a New Python File
 + Open VS Code.
 + Click `File` > `New File`.
-+ Type a simple line of code like ```print("Hello World!")```.
++ Type a simple line of code like `print("Hello World!")`.
 + Save the file using `Ctrl + S` (or `Cmd + S` on macOS).
-+ Choose a folder, then name the file with the extension ```.py```. Here is for the example: ``` hello.py.```
++ Choose a folder, then name the file with the extension `.py`. Here is for the example: `hello.py.`
 
 ### 2. Select the Python Interpreter
 + Open the Command Palette using `Ctrl + Shift + P` (Windows/Linux) and `Cmd + Shift + P` (macOS)
@@ -66,5 +66,40 @@ Once the interpreter is selected, you will see a Run button ▷ at the top right
 
 ---
 
+## Setup Python Virtual Environment (venv)
 
+Virtual Environment (venv) is a self-contained Python workspace that keeps packages and dependencies isolated from the main system. With venv, you can ensure that every tool, script, or library used remains consistent, does not conflict between versions, and is safe for experimentation without changing the main system.
 
+### 1. Make Project Folder in WSL
++ Open your WSL (Ubuntu).
++ Create a new folder and go to it in WSL. Example `mkdir PythonWorkshop` >> `cd PythonWorkshop`.
++ Open this folder in VS Code with the command `code .` VS Code is now connected to WSL.
+
+### 2. Create a Virtual Environment
++ Make sure the python3-venv module is installed with command `sudo apt install python3-venv`.
++ Create virtual environment with command `python3 -m venv venv` after that activate venv using `source venv/bin/activate`.
+
+The terminal will display (venv) on the left. This indicates that venv is active.
+Examples:
+`(venv) user@machine:~/namefolder-project$`
+
+### 3. Select Python Interpreter in VS Code
++ In VS Code, press `Ctrl + Shift + P`.
++ Search: `Python: Select Interpreter`.
++ Select the interpreter with a path like this `venv/bin/python`. VS Code is now connected to the virtual environment.
+
+### 4. Create a Test Python File
++ Click `File > New File`.
++ Save as `name-file.py`.
++ Fill the file with this test code and run the code:
+```py
+import sys
+print("Hello from venv!")
+print(sys.executable)
+```
++ Make sure the terminal output displays the Python path of the venv, for example:
+```swift
+/home/username/PythonWorkshop/venv/bin/python
+```
+> [!NOTE]
+> (Optional) To deactivate Virtual Environment use command `deactivate`.
