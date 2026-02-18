@@ -1,5 +1,15 @@
- #Beginner #Basic-Python-Scripting #.SubTopic #WSL
+ #Beginner #Basic-Python #Scripting #WSL #VS Code
 
+## Goals
+Students will be able to understand core Python concepts, identify basic syntax, and analyze the behavior of simple programs. They can run scripts in various environments, debug basic errors, and build small programs using conditions, loops, and functions. Students will also be able to apply these skills to automate simple tasks and prepare for more advanced cybersecurity scripting.
+
+## Prerequisites
+Participants should have the following knowledge or preparation before taking this module:
++ Basic computer literacy and familiarity with navigating files and folders.
++ Ability to use a terminal or command-line interface (e.g., cd, ls, mkdir).
++ A working installation of Python and Visual Studio Code.
++ Basic understanding of how to run commands on Windows, macOS, or Linux.
++ Completion of the environment setup module [Python-Setup.md]
 
 ## Introduction to Python
 
@@ -285,3 +295,12 @@ def hitung(a, b):
 x, y = hitung(10, 4)
 print(x, y)
 ```
+
+## Challenges
+...
+
+## Output
+After completing this module, participants must produce the following:
++ A Python script demonstrating the use of variables, conditionals, loops, and functions.
++ A write-up explaining how the script works, including logic flow and key components.
++ Screenshots with explanation showing the execution of the script in both the terminal and VS Code.
