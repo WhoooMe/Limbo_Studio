@@ -297,11 +297,6 @@ x, y = hitung(10, 4)
 print(x, y)
 ```
 
-
-
-
-
-
 ## Challenges
 ...
 
