@@ -11,11 +11,11 @@ Participants should have the following knowledge or preparation before taking th
 + Basic understanding of how to run commands on Windows, macOS, or Linux.
 + Completion of the environment setup module [Python-Setup.md]
 
-## Introduction to Python
+## <Introduction to Python>
 
 Python is one of the world's most popular programming languages, used for everything from simple application development to large-scale systems like machine learning, automation, cybersecurity, and data analytics. Its strength lies in its clean, readable syntax, allowing beginners to learn it without being overwhelmed by complex writing rules. Through this workshop, participants will learn the core foundations of Python, which form the basis for building scripts, automating, and preparing them for exploration into more advanced areas such as cybersecurity or ethical hacking.
 ‎ 
-## Syntax in Python
+## <Syntax in Python>
 Python is known for its clean and easy-to-understand syntax, making it perfect for both beginners and professional applications such as automation and cybersecurity. Here are some basic syntaxes in the Python programming language:
 ‎ 
 ### 1. Statements & Expressions
@@ -127,7 +127,7 @@ age = input("Your age: ")
 print(type(age))
 ```
 ‎ 
-## Control Flow
+## <Control Flow>
 Control flow is how Python determines what to execute next based on certain conditions. Without it, a program would simply run in a straight line without any clear direction or purpose. Control flow allows us to make decisions, limit execution, and build more complex logic. Here's an example of control flow:
 
 ### 1. If Statement
@@ -187,10 +187,10 @@ Last but not least, here are some operators that can be used in Control Flow:
 + `or`: One of the conditions must be true.
 + `not`: Invert True/False values.
 ‎ 
-## Loops
+## <Loops>
 Loops in Python essentially allow a program to execute blocks of code repeatedly without having to write them manually. Python has two main types of loops: `for loops` and `while loops`, which have different functions. Here's an explanation.
 
-+ For loops
+### 1. For loops
 Used to repeat something that has a clearly defined number, such as a list, string, or range of numbers. Example:
 ```pyhton
 for i in range(5):
@@ -204,7 +204,7 @@ Here's the results:
 3
 4
 ```
-+ While loops
+### 2. While loops
 Used when we want to repeat until a certain condition is met.
 Suitable for: user input, program menus, infinite loops that stop when a certain condition is met, etc. Here's an example:
 ```python
@@ -214,6 +214,7 @@ while count < 5:
     print(count)
     count += 1
 ```
+### 3. Break and Continue
 Last but not least, there are break and continue statements. Here's an simple explanation.
 + Break is used to stop a loop completely. Here's an example:
 ```python
@@ -230,7 +231,7 @@ for i in range(5):
     print(i)
 ```
 
-## Functions
+## <Functions>
 Functions in Python are essentially blocks of code that can be called back. So, we only need to write one block of code in a program to be able to use it multiple times without having to rewrite the logic. Functions in Python can be written using the following structure.
 ```python
 def nama_fungsi():
@@ -295,6 +296,11 @@ def hitung(a, b):
 x, y = hitung(10, 4)
 print(x, y)
 ```
+
+
+
+
+
 
 ## Challenges
 ...
