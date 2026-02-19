@@ -283,7 +283,7 @@ def brute_force_caesar(ciphertext):
 ```
 The attacker simply sees which result makes sense and doesn't need to know the key. This is different from XOR, which uses bytes as the key. Therefore, brute force is impossible because it has `2^128 possibilities`.
 
-## Challenges — Easy
+## Challenges - Easy
 **Title: Alphabet Shift Recovery**\
 **Task Description: You are given the following ciphertext `fbehuFWI_Iodj`**\
 **Your task is to:**
@@ -298,7 +298,7 @@ The attacker simply sees which result makes sense and doesn't need to know the k
 + Use brute force if necessary.
 
 
-## Challenge 2 — Medium
+## Challenge 2 - Medium
 **Title: XOR Byte Investigation**\
 **Task Description: You are given a ciphertext generated using a single-byte XOR key.**
 
