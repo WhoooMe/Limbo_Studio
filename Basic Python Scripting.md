@@ -82,18 +82,7 @@ Like other programming languages, Python itself consists of several rules for wr
 + Spaces are not allowed
 + Python keywords (e.g., `if`, `while`, `import`, `class`, `return`, `try`, `except`, `def`, `class`, etc.) are not allowed.
 
-### 4. Comments
-Comments in Python are used to provide notes, make it easier to maintain a program that has been created, fix bugs (debugging) or explain the code that has been created to other programmers, so that they can easily understand the code structure used in a program. In Python, comments come in two forms: single-line and multi-line. Here's an example:
-```python
-# This is a comment
-
-"""
-This is a multi-line comment
-or documentation block.
-"""
-```
-
-### 5. Print & String Basics
+### 4. Print & String Basics
 Print is essentially used to display text, numbers, or calculation results on the user's screen. Here are some examples of print commands in Python:
 + Basic example `print("Hello World")`
 + Print with multiple values ​​where Python automatically puts spaces between arguments `print("My age is", 20)`
@@ -117,7 +106,7 @@ print(f"Hello, {name}")
 print(f"5 + 5 = {5 + 5}")
 ```
 
-### 6. Basic Input
+### 5. Basic Input
 Basically, input itself allows users to provide input to a program so that it can produce a value or action, according to how the program works, for example:
 ```python
 username = input("Enter your name: ")
@@ -246,7 +235,6 @@ def sapa(nama):
 sapa("Dewi")
 sapa("Raka")
 ```
-
 There is something no less important to discuss regarding this function, here are some things that this function can do.
 
 ### 1. Default Parameter
@@ -297,11 +285,65 @@ x, y = hitung(10, 4)
 print(x, y)
 ```
 
-## Challenges
-...
+## \<Core Libraries in Cryptography\>
+In our future material, we will use several libraries or built-in modules in Python, therefore, here are some libraries commonly used in solving CTF problems.
+
+### 1. hashlib
+This module is used to create a hash of data using algorithms such as MD5, SHA-1, SHA-256 or SHA-512. Example:
+```python
+import hashlib
+
+text = "hello"
+hash_object = hashlib.sha256(text.encode())
+print(hash_object.hexdigest())
+```
+
+### 2. base64
+Used to encode bytes into ASCII text. Base64 is not encryption, just encoding so that binary data can be transmitted as text. It is used for data transfer via HTTP, tokens, and many CTF challenges.
+
+### 3. binascii
+The binascii library is used to convert binary data (bytes) to hexadecimal or hexadecimal to bytes. In Cryptography, data is often displayed in hex format because it is easier for humans to read than raw bytes.
+
+### 4. math
+In the context of cryptography, the math library is often used for basic mathematical functions, particularly `gcd()` (Greatest Common Divisor). This function is crucial in algorithms like RSA, as it is used to check whether two numbers are relatively prime.
+
+### 5. os.urandom
+With this library, we can generate random bytes from the operating system. This is typically used for key generation, cryptographic randomness, etc. It usually serves as a source of entropy (the degree of randomness) in cryptographic systems. Example:
+```
+Low Entropy (Dangerous): Password: 123456 or password
+High Entropy (Safe): Result of os.urandom(16): b'\xd1\x8f\x02\x4c...'.
+```
+
+### 6. secrets
+The secrets library is specifically designed to generate cryptographically secure random numbers. Unlike the random module, which is suitable for simulations or games, secrets uses the operating system's entropy source to ensure its results are unpredictable. Example:
+```
+import secrets
+
+# Membuat token rahasia untuk link reset password
+token = secrets.token_urlsafe(16) 
+print(token) # Hasilnya bersih: '_qW2-pL9rGz...'
+```
+
+### 7. hmac
+The hmac library is used to create a Hash-based Message Authentication Code (HMAC), a mechanism that combines hashing with a secret key. Unlike regular hashing, which only produces a fingerprint of the data, HMAC ensures that the message was actually created by the party possessing the secret key. This is often used in API authentication and data integrity verification.
+
+## Challenges 1 - Simple Login & Menu System
+**Objective: Create a simple program that uses input, if-elif-else, loops, dan functions.**\
+**Create a program with the following conditions:**\
++ The program prompts the user to enter `Username` and `Password`.
++ If the username is "admin" and the password is "python123", display `Login successful!` and if incorrect, display `Login failed!`.
++ If login is successful, display the following menu:
+```markdown
+Login successful!
+1. Show Greeting
+2. Exit
+```
+> [!TIP]
+> Use a while loop so that the menu continues to appear until the user selects Exit.
+> 
+> Create a separate function for the Greeting menu and use the username as a parameter.
 
 ## Output
 After completing this module, participants must produce the following:
 + A Python script demonstrating the use of variables, conditionals, loops, and functions.
 + A write-up explaining how the script works, including logic flow and key components.
-+ Screenshots with explanation showing the execution of the script in both the terminal and VS Code.
