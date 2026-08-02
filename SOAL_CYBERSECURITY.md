@@ -1,18 +1,34 @@
-# CTF Practice Set — Mahasiswa Baru
-**Format flag:** `MENTOR{...}`
-**Kategori:** Linux General Skills, Reverse Engineering (Game), Web Exploitation
+# 🚩 Welcome to CTF Practice Set!
+### Haaii... Para Calon Cyber Warrior 👋☺️
+Sebelumnya selamat ya buat kalian yang sudah berhasil lolos jadi maba UNUD, akhirnya perjuangan panjang kalian selama ini kebayar juga! 🎉
+<br> Sebagai maba, pasti banyak banget nihh.. hal baru yang bakal kalian temuin ke depannya, misal; mata kuliah baru, dosen baru, sistem SKS yang pastinya ngebuat kalian penasaran dan makin semangat buat kuliahnya 😎
 
----
+Nah, salah satu hal yang ingin kami perkenalkan dan nggak kalah seru adalah dunia **<em>Cybersecurity</em>**. Buat kalian yang udah mikir dunia **<em>Cyber</em>** itu susah, tenang aja kok, kalian nggak perlu jago ngoding atau paham sistem OS Linux dari nol. Justru soal-soal ini dibikin khusus buat kalian yang bener-bener baru pertama kali nyoba. 🙌
 
-## Soal 1 — "Log Digger"
-**Kategori:** General Skills (Linux)
-**Kesulitan:** Normal
-**Poin saran:** 100
+Kalau stuck, itu wajar banget buat semua orang, bahkan yang ahli **<em>Cybersecurity</em>** sekalipun, juga sering banget Googling, buka dokumentasi, atau nanya ke temen. Itu bukan tanda kalian kurang pintar, tapi tanda kalian lagi beneran belajar. 💪
+
+Gak usah lama-lama, Yukk langsung kita mulai! 🚀
+
+--.--.--
+
+## 🌕 Prologue ##
+Sebelum mulai, ada beberapa hal penting yang wajib kalian tau nihh:
+
+- 🚩 **Format flag:** semua jawaban harus mengikuti format `tecart{...}`
+- 🎯 **Tugas kalian:** temukan **_flag_** yang tersembunyi di setiap soal, lalu submit sesuai formatnya
+- 💡 **Hint:** ngerasa stuck?, tenang ada hint yang siap bantu kalian di setiap soal kokk..
+- ⏱️ **Waktu:** Take Your Time 😉 
+
+Sudah siap bantai? Lanjut ke soal pertama! 👇
+
+## Soal 1 -- "Log Digger"
++ Kategori: General Skills (Linux)
++ Kesulitan: Easy
 
 ### Deskripsi
-Sebuah server perusahaan mengalami anomali. Tim keamanan mencurigai ada penyusup yang sempat mengakses sistem, dan jejaknya tertinggal di dalam file log server berukuran besar. Tugas kalian: gali file log tersebut dan temukan flag yang ditinggalkan penyusup.
+Sebuah server perusahaan mengalami anomali. Tim keamanan mencurigai ada penyusup yang sempat mengakses sistem, dan jejaknya tertinggal di dalam file log server berukuran besar. Tugas kalian adalah menggali file log tersebut dan menemukan jejak yang ditinggalkan penyusup berupa **_flag_**.
 
-Hati-hati — di dalam log juga ada beberapa "flag palsu" yang sengaja disisipkan untuk mengecoh. Pastikan flag yang kalian submit sesuai format yang benar: `MENTOR{...}`.
+Namun, hati-hati di dalam log juga ada beberapa "**_flag palsu_**" yang sengaja disisipkan penyusup untuk mengecoh kalian. Pastikan **_flag_** yang kalian submit sesuai format yang benar: `tecart{...}`.
 
 ### Attachment
 - `server_log.txt`
