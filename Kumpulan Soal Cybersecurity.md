@@ -45,7 +45,7 @@ Namun, hati-hati di dalam log juga ada beberapa "**_flag palsu_**" yang sengaja 
 ---
 
 ## Soal 2 -- "Access Denied"
-+ Kategori: Web Exploitation (Basic)
++ Kategori: Web Exploitation
 + Kesulitan: Normal
 + Attachment: `index.html`
 
@@ -71,7 +71,7 @@ Tugas kalian adalah buka _source code_ halaman ini dan temukan apa yang di tingg
 ---
 
 ## Soal 3 -- "Cheat Code Breaker"
-+ Kategori: Reverse Engineering (Game)
++ Kategori: Reverse Engineering
 + Kesulitan: Normal
 + Attachment: `game_check` (binary ELF 64-bit, Linux)
 
